@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres
+    container_name: ecom-user-pg-db
+    environment:
+      POSTGRES_USER: user-app-db
+      POSTGRES_PASSWORD: user-app-db
+      POSTGRES_DB: user-app-db
+    ports:
+      - "5433:5432"

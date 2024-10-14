@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /user
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5433/user-app-db
+        username: user-app-db
+        password: user-app-db
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    application:
+        name: user-app
